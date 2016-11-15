@@ -40,7 +40,7 @@
       opacity: 1,
       marker: {
         color: 'red',
-        size: 20
+        size: 8
       }
     }], {
       margin: { t: 0 } } );
@@ -59,6 +59,9 @@
 //    Plotly.relayout(TESTER,update)
     Plotly.redraw(TESTER);
   }
+  TESTER.on('plotly_click', function(data){
+    console.log(data)
+  });
 </script>
 
 </body>
